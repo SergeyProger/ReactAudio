@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Blog: test" uuid="aecb803b-b697-4dd2-8817-7226604e5dff">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails Blog: development" uuid="06395b21-6591-444c-ab0a-bf5598e93466">
+      <database-info product="SQLite" version="3.20.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.20.1.1" family="SQLITE" exact-version="3.20.1" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+    <data-source name="Rails Blog: production" uuid="48f7192f-7527-41ff-b820-67c5b61708c8">
+      <database-info product="SQLite" version="3.20.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.20.1.1" family="SQLITE" exact-version="3.20.1" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+  </component>
+</project>
