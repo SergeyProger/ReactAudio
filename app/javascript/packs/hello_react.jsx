@@ -17,7 +17,6 @@ class Hello extends React.Component {
         } catch(e) {
             console.log(e);  // тут можно обработать ошибку парсинга данных
         }
-        console.log(data[1]);
         return(
             <div className="container">
             <div className = "jumbotron">

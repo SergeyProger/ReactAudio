@@ -16,6 +16,11 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/public/assets
+/.idea
+/.idea *
+/public/system/*
+.rvmrc
 
 /node_modules
 /yarn-error.log

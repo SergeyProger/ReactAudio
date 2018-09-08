@@ -6,19 +6,18 @@ class Radio extends React.Component {
        super(props);
        this.url = props.url;
        this.name = props.name;
+       this.idPlaer = props.id;
     }
 
     render() {
-        const asPlay = this.props.isPlay;
-        console.log("render" + asPlay);
+
         return (
             <div className="card mx-auto">
                 <div className="card-header">
                     <p> Radio {this.name} </p>
-
                 </div>
                 <div className="card-body">
-                    <audio controls id = "plaer" onClick={this.handleClick()}>
+                    <audio controls key = {this.idPlaer} className="plaer" id = {this.idPlaer}>
                         <source src = {this.url} type="audio/ogg" />
                         <source src = {this.url} type="audio/mpeg" />
                         <source src = {this.url} type="audio/waw" />
@@ -28,9 +27,5 @@ class Radio extends React.Component {
             </div>
         );
     }
-
-     handleClick=()=>{
-
-     }
 }
 export default Radio;
