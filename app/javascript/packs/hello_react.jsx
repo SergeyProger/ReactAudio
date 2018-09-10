@@ -7,7 +7,6 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import RadioList from '../components/RadioList';
 
-
 class Hello extends React.Component {
 
     render() {

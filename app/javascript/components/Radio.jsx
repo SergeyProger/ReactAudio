@@ -1,5 +1,4 @@
 import React from 'react';
-//import {nevol, vol, play, pause} from '../images';
 
 class Radio extends React.Component {
     constructor(props) {
@@ -14,7 +13,12 @@ class Radio extends React.Component {
 
 
     render() {
+
         const {isPlay, onButtonClick} = this.props;
+        let pauseButonImage = isPlay ?  {display: 'block'} :  {display: 'none'};
+        let playButonImage = isPlay ?  {display: 'none'} :  {display: 'block'};
+        let volumeButonImage = this.state.volStat ?  {display: 'block'} :  {display: 'none'};
+        let volButonImage = this.state.volStat ?  {display: 'none'} :  {display: 'block'};
         let message = isPlay ? 'stop' : 'play';
         let styleBtn = isPlay ? 'btn-outline-success' : 'btn-outline-danger';
          const play = isPlay ? true : false;
@@ -32,28 +36,31 @@ class Radio extends React.Component {
                         <source src={this.rurl} type="audio/waw"/>
                         Ваш браузер не поддерживает <code>audio</code> элемент.
                     </audio>
-                    <span className="btn-group">
-                    <div className="btn btn-dark" onClick={onButtonClick}>
-                       <h2 className={styleBtn}>{message}</h2>
+                    <div className='btn-group'>
+                    <div>
+                    <img className="icon-play" style={playButonImage} src={`${require('../images/play.jpeg')}`} onClick={onButtonClick}/>
+                    <img className="icon-pause" style={pauseButonImage} src={`${require('../images/pause.jpeg')}`} onClick={onButtonClick}/>
                     </div>
-                        <div className="btn btn-dark" onClick={this.wolume.bind(this)}>
-                            <h2 className="btn-outline-info">-</h2>
-                         </div>
-                    </span>
+                    <div>
+                    <img className="icon-play" style={volumeButonImage} src={`${require('../images/vol.jpeg')}`} onClick={this.wolume}/>
+                    <img className="icon-pause" style={volButonImage} src={`${require('../images/nevol.jpeg')}`} onClick={this.wolume}/>
+                    </div>
+                    </div>
                 </div>
-            </div>
 
-        );
+            </div>
+                );
     }
 
 
     wolume = () => {
+        let pon = document.querySelectorAll('.plaer');
         this.setState({volStat: !this.state.volStat});
         console.log(`volume state = ${this.state.volStat}`);
-        if (this.state.volStat) {
-            this.volume = 1.0;
+        if (!this.state.volStat) {
+            pon[this.rid-1].volume = 1.0;
         } else {
-            this.volume = 0.0;
+            pon[this.rid-1].volume = 0.0;
         }
     }
 

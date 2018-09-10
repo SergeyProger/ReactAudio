@@ -9,3 +9,18 @@
 .centerText {
   text-align: center;
 }
+.icon-play {
+  width: 50%;
+  padding-left : 32px;
+  padding-top : 10px;
+  padding-bottom : 10px;
+  background-repeat : no-repeat;
+}
+.icon-pause {
+  display: none;
+  width: 50%;
+  padding-left : 32px;
+  padding-top : 10px;
+  padding-bottom : 10px;
+  background-repeat : no-repeat;
+}
