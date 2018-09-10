@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import RadioList from '../components/RadioList';
 
+
 class Hello extends React.Component {
 
     render() {
@@ -20,7 +21,7 @@ class Hello extends React.Component {
         return(
             <div className="container">
             <div className = "jumbotron">
-                <h1 className ="centerText"> Welcom my Radio</h1>
+                <h1 className ="centerText"> Radio </h1>
             </div>
 
             <div className = "centerDiv centerText">
