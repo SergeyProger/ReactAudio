@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20180907072922) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "radios", force: :cascade do |t|
     t.string "r_name"
     t.string "r_url"
