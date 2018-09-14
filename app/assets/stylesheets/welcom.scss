@@ -1,26 +1,41 @@
 // Place all the styles related to the Welcom controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.centerDiv {
-  margin: auto;
-  width: 50%;
-  padding: 5px;
+
+.admin-column{
+  display: none;
+  float: left;
+  max-width: 30%;
 }
-.centerText {
+
+.radio-column{
+  margin: auto;
+  max-width: 100%;
   text-align: center;
 }
+
 .icon-play {
-  width: 10em;
+  max-width: 10em;
   padding-left : 32px;
   padding-top : 10px;
   padding-bottom : 10px;
-  background-repeat : no-repeat;
+  cursor: pointer;
 }
 .icon-pause {
   display: none;
-  width: 10em;
+  max-width: 10em;
   padding-left : 32px;
   padding-top : 10px;
   padding-bottom : 10px;
-  background-repeat : no-repeat;
+  cursor: pointer;
+}
+.icon-admin {
+  position: relative;
+  max-width: 5em;
+  min-height: 2em;
+  left: 87%;
+  top: 5px;
+  border: 1px solid gainsboro;
+  background: #999999;
+  cursor: pointer;
 }

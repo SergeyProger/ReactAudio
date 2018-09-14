@@ -19,9 +19,8 @@ class Radio extends React.Component {
         let playButonImage = isPlay ?  {display: 'none'} :  {display: 'block'};
         let volumeButonImage = this.state.volStat ?  {display: 'block'} :  {display: 'none'};
         let volButonImage = this.state.volStat ?  {display: 'none'} :  {display: 'block'};
-        let message = isPlay ? 'stop' : 'play';
         let styleBtn = isPlay ? 'btn-outline-success' : 'btn-outline-danger';
-         const play = isPlay ? true : false;
+
         return (
             <div className="card mx-auto">
                 <div className="card-header">
@@ -38,12 +37,16 @@ class Radio extends React.Component {
                     </audio>
                     <div className='btn-group'>
                     <div>
-                    <img className="icon-play" style={playButonImage} src={`${require('../images/play.jpeg')}`} onClick={onButtonClick}/>
-                    <img className="icon-pause" style={pauseButonImage} src={`${require('../images/pause.jpeg')}`} onClick={onButtonClick}/>
+                    <img className="icon-play" style={playButonImage} src={`${require('../images/play.png')}`}
+                         onClick={onButtonClick}/>
+                    <img className="icon-pause" style={pauseButonImage} src={`${require('../images/pause.jpeg')}`}
+                         onClick={onButtonClick}/>
                     </div>
                     <div>
-                    <img className="icon-play" style={volumeButonImage} src={`${require('../images/vol.jpeg')}`} onClick={this.wolume}/>
-                    <img className="icon-pause" style={volButonImage} src={`${require('../images/nevol.jpeg')}`} onClick={this.wolume}/>
+                    <img className="icon-play" style={volumeButonImage} src={`${require('../images/vol.jpeg')}`}
+                         onClick={this.wolume}/>
+                    <img className="icon-pause" style={volButonImage} src={`${require('../images/nevol.jpeg')}`}
+                         onClick={this.wolume}/>
                     </div>
                     </div>
                 </div>
@@ -56,7 +59,7 @@ class Radio extends React.Component {
     wolume = () => {
         let pon = document.querySelectorAll('.plaer');
         this.setState({volStat: !this.state.volStat});
-        console.log(`volume state = ${this.state.volStat}`);
+
         if (!this.state.volStat) {
             pon[this.rid-1].volume = 1.0;
         } else {

@@ -4,10 +4,14 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 import RadioList from '../components/RadioList';
+import AdminList from "../components/RadioList/adminList";
 
 class Hello extends React.Component {
+
+    state = {
+        admin: false
+    }
 
     render() {
         let data = [];  // задаем значение по-умолчанию
@@ -17,25 +21,36 @@ class Hello extends React.Component {
         } catch(e) {
             console.log(e);  // тут можно обработать ошибку парсинга данных
         }
+        let menu = this.state.admin ? {display: 'block'} : {display: 'none'}
         return(
             <div className="container">
-            <div className = "jumbotron">
-                <h1 className ="centerText"> Radio </h1>
-            </div>
+                <div className = "jumbotron ">
+                <h1 className ="centerText "> Radio </h1>
+                    <img className="icon-admin" src={`${require('../images/admin.png')}`}
+                    onClick={this.mainAdmin.bind(this)}/>
+                </div>
+                <div className="admin-column" style={menu}>
+                    <AdminList data={data} />
+                </div>
+                <div className ="radio-column">
+                    <RadioList data={data} />
+                </div>
 
-            <div className = "centerDiv centerText">
-               <RadioList data={data}/>
-            </div>
             </div>
         )
     }
+    mainAdmin(){
+        this.setState({admin: !this.state.admin});
+        console.log('Нажата кнока меню.'+ this.state.admin);
+    }
 }
-
-
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <Hello/>,
-    document.body.appendChild(document.createElement('root')),
-  )
+    ReactDOM.render(
+        <Hello/>,
+        document.body.appendChild(document.createElement('root')),
+    )
 })
+
+export default Hello;
+
 
