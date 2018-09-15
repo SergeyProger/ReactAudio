@@ -25,7 +25,10 @@ class Hello extends React.Component {
         return(
             <div className="container">
                 <div className = "jumbotron ">
-                <h1 className ="centerText "> Radio </h1>
+                    <div className ="header">
+                        <h1>Radio Show </h1>
+                        <h2>This is the best radio compilation</h2>
+                    </div>
                     <img className="icon-admin" src={`${require('../images/admin.png')}`}
                     onClick={this.mainAdmin.bind(this)}/>
                 </div>
