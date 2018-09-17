@@ -3,17 +3,14 @@ import AdminRadio from "../AdminRadio";
 
 
  class AdminList extends React.Component {
-     constructor(props){
-         super(props);
-         this.state = {
-             radioId: null
-         }
-     }
+
+     clickDelete = (id) => this.props.clickDelete(id);
+
 
      render() {
          const radioElements = this.props.data.map((radio) =>
              <li key={radio.id} className="list-group-item">
-             <AdminRadio radio = {radio}/>
+             <AdminRadio radio = {radio} clickDelete={this.clickDelete.bind(this, radio.id)}/>
              </li>);
 
          return <ul className="list-group"> {radioElements} </ul>;

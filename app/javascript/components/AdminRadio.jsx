@@ -18,7 +18,8 @@ class AdminRadio extends React.Component {
                 </div>
                     <div className="card-body">
                         <h4>{this.rurl}</h4>
-                        <button className="btn-dark" style={{cursor: 'pointer'}}>Delete</button>
+                        <button className="btn-dark" style={{cursor: 'pointer'}}
+                        onClick={this.props.clickDelete}>Delete</button>
                         <button className="btn-dark" style={{cursor: 'pointer'}}>Edit</button>
                     </div>
             </div>

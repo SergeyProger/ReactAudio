@@ -4,24 +4,51 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery/dist/jquery'
 import RadioList from '../components/RadioList';
 import AdminList from "../components/RadioList/adminList";
 
 class Hello extends React.Component {
 
-    state = {
-        admin: false
-    }
+  constructor(props) {
+      super(props);
+      this.radios = [];
+      this.state = {
+          admin: false,
+          radiosTry: true
+      }
+      this.componentDidMount();
+  }
 
-    render() {
-        let data = [];  // задаем значение по-умолчанию
-
+    componentDidMount() {
         try {
-            data = JSON.parse(document.querySelector('script[data]').getAttribute('data'));
+            this.radios = JSON.parse(document.querySelector('script[data]').getAttribute('data'));
         } catch(e) {
             console.log(e);  // тут можно обработать ошибку парсинга данных
         }
+    }
+
+    clickDelete = (id) => {
+        $.ajax({
+            url: '/radio/'+id,
+            type: 'DELETE',
+            success:() => {
+                console.log('rabotaet = '+this.radios.length);
+                let vaer = this.radios.filter((radio) => {return radio.id != id});
+                console.log('vaer = '+ vaer.length);
+                this.radios = vaer;
+                console.log(this.state.radiosTry+' rabotaet = '+this.radios.length);
+                this.setState({radiosTry:  !this.state.radiosTry});
+                console.log(this.state.radiosTry+' rabotaet = '+this.radios.length);
+
+            }
+        });
+    }
+
+    render() {
+
         let menu = this.state.admin ? {display: 'block'} : {display: 'none'}
+
         return(
             <div className="container">
                 <div className = "jumbotron ">
@@ -33,18 +60,18 @@ class Hello extends React.Component {
                     onClick={this.mainAdmin.bind(this)}/>
                 </div>
                 <div className="admin-column" style={menu}>
-                    <AdminList data={data} />
+                    <AdminList data={this.radios} clickDelete={this.clickDelete} />
                 </div>
                 <div className ="radio-column">
-                    <RadioList data={data} />
+                    <RadioList data={this.radios} />
                 </div>
 
             </div>
         )
     }
+
     mainAdmin(){
         this.setState({admin: !this.state.admin});
-        console.log('Нажата кнока меню.'+ this.state.admin);
     }
 }
 document.addEventListener('DOMContentLoaded', () => {

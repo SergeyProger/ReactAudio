@@ -19,6 +19,7 @@ export default class RadioList extends React.Component{
 
         return ( <ul className="list-group"> {radioElements} </ul> );
     }
+
     imitState =(radioId)=>{
         let lzeState =  this.state.playRadioId === radioId ? null : radioId;
         return lzeState;
