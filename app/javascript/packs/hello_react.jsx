@@ -16,7 +16,7 @@ class Hello extends React.Component {
       this.state = {
           admin: false,
           radiosTry: true
-      }
+      };
       this.componentDidMount();
   }
 
@@ -33,17 +33,13 @@ class Hello extends React.Component {
             url: '/radio/'+id,
             type: 'DELETE',
             success:() => {
-                console.log('rabotaet = '+this.radios.length);
                 let vaer = this.radios.filter((radio) => {return radio.id != id});
-                console.log('vaer = '+ vaer.length);
                 this.radios = vaer;
-                console.log(this.state.radiosTry+' rabotaet = '+this.radios.length);
                 this.setState({radiosTry:  !this.state.radiosTry});
-                console.log(this.state.radiosTry+' rabotaet = '+this.radios.length);
-
             }
         });
     }
+
 
     render() {
 

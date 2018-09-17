@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7062f78e-d262-4d4b-9a32-d250d97ec178" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/radio_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/radio_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx" afterPath="$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/components/RadioList/adminList.jsx" afterPath="$PROJECT_DIR$/app/javascript/components/RadioList/adminList.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx" afterPath="$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" afterPath="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/radio.rb" afterPath="$PROJECT_DIR$/app/models/radio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -95,11 +89,14 @@
         <entry file="file://$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding>
-                <marker date="1537176882058" expanded="true" signature="606:801" ph="..." />
-                <marker date="1537176882058" expanded="true" signature="606:820" ph="..." />
-                <marker date="1537176882058" expanded="true" signature="740:749" ph="..." />
+                <marker date="1537192003144" expanded="true" signature="69:840" ph="{...}" />
+                <marker date="1537192003144" expanded="true" signature="254:838" ph="{...}" />
+                <marker date="1537192003144" expanded="true" signature="285:821" ph="&lt;div/&gt;" />
+                <marker date="1537192003144" expanded="true" signature="606:801" ph="..." />
+                <marker date="1537192003144" expanded="true" signature="606:820" ph="..." />
+                <marker date="1537192003144" expanded="true" signature="740:749" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/radio.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -131,10 +128,13 @@
       <file leaf-file-name="adminList.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/javascript/components/RadioList/adminList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <marker date="1537192003144" expanded="true" signature="110:504" ph="{...}" />
+                <marker date="1537192003144" expanded="true" signature="400:422" ph="&lt;li/&gt;" />
+                <marker date="1537192003144" expanded="true" signature="400:500" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -155,16 +155,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1537192003144" expanded="true" signature="652:761" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello_react.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hello_react.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/javascript/packs/hello_react.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="540">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#228#254#0" expanded="true" />
               </folding>
@@ -172,11 +174,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3582">
+              <caret line="199" column="27" lean-forward="false" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -185,19 +197,12 @@
       <file leaf-file-name="radio_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/radio_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/radio/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="234">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1537192003144" expanded="true" signature="21:508" ph=" ... end" />
+                <marker date="1537192003144" expanded="true" signature="482:504" ph=" ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,8 +250,9 @@
         <option value="$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/components/RadioList/adminList.jsx" />
         <option value="$PROJECT_DIR$/app/controllers/radio_controller.rb" />
-        <option value="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" />
         <option value="$PROJECT_DIR$/app/models/radio.rb" />
+        <option value="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -544,7 +550,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165285000" />
+    <option name="totallyTimeSpent" value="165837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="173" y="47" width="1613" height="1025" extended-state="6" />
@@ -822,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -836,19 +835,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1537192003148" expanded="true" signature="30:179" ph="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -856,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,10 +862,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/components/RadioList/adminList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <marker date="1537192003144" expanded="true" signature="110:504" ph="{...}" />
+            <marker date="1537192003144" expanded="true" signature="400:422" ph="&lt;li/&gt;" />
+            <marker date="1537192003144" expanded="true" signature="400:500" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -892,27 +887,33 @@
     <entry file="file://$PROJECT_DIR$/app/models/radio.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/radio_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1537192003144" expanded="true" signature="21:508" ph=" ... end" />
+            <marker date="1537192003144" expanded="true" signature="482:504" ph=" ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
-            <marker date="1537176882058" expanded="true" signature="606:801" ph="..." />
-            <marker date="1537176882058" expanded="true" signature="606:820" ph="..." />
-            <marker date="1537176882058" expanded="true" signature="740:749" ph="..." />
+            <marker date="1537192003144" expanded="true" signature="69:840" ph="{...}" />
+            <marker date="1537192003144" expanded="true" signature="254:838" ph="{...}" />
+            <marker date="1537192003144" expanded="true" signature="285:821" ph="&lt;div/&gt;" />
+            <marker date="1537192003144" expanded="true" signature="606:801" ph="..." />
+            <marker date="1537192003144" expanded="true" signature="606:820" ph="..." />
+            <marker date="1537192003144" expanded="true" signature="740:749" ph="..." />
           </folding>
         </state>
       </provider>
@@ -921,17 +922,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1537192003144" expanded="true" signature="652:761" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/hello_react.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="540">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#228#254#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3582">
+          <caret line="199" column="27" lean-forward="false" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
