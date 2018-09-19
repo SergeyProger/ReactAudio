@@ -6,7 +6,6 @@ import AdminRadio from "../AdminRadio";
 
      clickDelete = (id) => this.props.clickDelete(id);
 
-
      render() {
          const radioElements = this.props.data.map((radio) =>
              <li key={radio.id} className="list-group-item">
@@ -14,9 +13,6 @@ import AdminRadio from "../AdminRadio";
              </li>);
 
          return <ul className="list-group"> {radioElements} </ul>;
-
      }
-
-
 }
 export default AdminList;

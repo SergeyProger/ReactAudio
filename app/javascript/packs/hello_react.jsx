@@ -4,28 +4,38 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery/dist/jquery'
+import $ from 'jquery/dist/jquery';
 import RadioList from '../components/RadioList';
 import AdminList from "../components/RadioList/adminList";
+import NewRadio from '../components/RadioList/_newRadio'
 
 class Hello extends React.Component {
 
   constructor(props) {
       super(props);
-      this.radios = [];
       this.state = {
           admin: false,
-          radiosTry: true
+          radios: []
       };
       this.componentDidMount();
   }
 
+
     componentDidMount() {
         try {
-            this.radios = JSON.parse(document.querySelector('script[data]').getAttribute('data'));
+         let rad =  JSON.parse(document.querySelector('script[data]').getAttribute('data'));
+            this.setState({radios: rad});
         } catch(e) {
-            console.log(e);  // тут можно обработать ошибку парсинга данных
+            console.log(e);
         }
+    }
+
+    removeRadioClient(id) {
+        let newRadio = this.state.radios.filter((radio) => {
+            return radio.id != id;
+        });
+
+        this.setState({radios: newRadio});
     }
 
     clickDelete = (id) => {
@@ -33,12 +43,16 @@ class Hello extends React.Component {
             url: '/radio/'+id,
             type: 'DELETE',
             success:() => {
-                let vaer = this.radios.filter((radio) => {return radio.id != id});
-                this.radios = vaer;
-                this.setState({radiosTry:  !this.state.radiosTry});
+                this.removeRadioClient(id);
             }
         });
     }
+
+    handleSubmit = (radio) => {
+        let newState = this.state.radios.concat(radio);
+        this.setState({ radios: newState });
+    }
+
 
 
     render() {
@@ -52,16 +66,14 @@ class Hello extends React.Component {
                         <h1>Radio Show </h1>
                         <h2>This is the best radio compilation</h2>
                     </div>
+
                     <img className="icon-admin" src={`${require('../images/admin.png')}`}
                     onClick={this.mainAdmin.bind(this)}/>
                 </div>
-                <div className="admin-column" style={menu}>
-                    <AdminList data={this.radios} clickDelete={this.clickDelete} />
-                </div>
-                <div className ="radio-column">
-                    <RadioList data={this.radios} />
-                </div>
 
+                <div className="new-radio" style={menu}><NewRadio handleSubmit={this.handleSubmit}/></div>
+                <div className="admin-column" style={menu}><AdminList data={this.state.radios} clickDelete={this.clickDelete} /></div>
+                <div className ="radio-column"><RadioList data={this.state.radios} /></div>
             </div>
         )
     }
