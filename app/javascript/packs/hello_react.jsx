@@ -20,10 +20,9 @@ class Hello extends React.Component {
       this.componentDidMount();
   }
 
-
     componentDidMount() {
         try {
-         let rad =  JSON.parse(document.querySelector('script[data]').getAttribute('data'));
+         let rad = JSON.parse(document.querySelector('script[data]').getAttribute('data'));
             this.setState({radios: rad});
         } catch(e) {
             console.log(e);
@@ -36,6 +35,13 @@ class Hello extends React.Component {
         });
 
         this.setState({radios: newRadio});
+    }
+
+    updateRadio(radio) {
+        let radiox = this.state.radios.filter((i) => { return i.id != radio.id });
+         radiox.push(radio);
+
+        this.setState({radios: radiox });
     }
 
     clickDelete = (id) => {
@@ -53,7 +59,19 @@ class Hello extends React.Component {
         this.setState({ radios: newState });
     }
 
+    clickUpdate = (radio) =>{
+        console.log('tic' + radio.r_url );
+        $.ajax({
+                url: `/radio/${radio.id}`,
+                type: 'PUT',
+                data: { radio: radio },
+                success: () => {
+                    this.updateRadio(radio);
 
+                }
+            }
+        )
+    }
 
     render() {
 
@@ -72,7 +90,9 @@ class Hello extends React.Component {
                 </div>
 
                 <div className="new-radio" style={menu}><NewRadio handleSubmit={this.handleSubmit}/></div>
-                <div className="admin-column" style={menu}><AdminList data={this.state.radios} clickDelete={this.clickDelete} /></div>
+                <div className="admin-column" style={menu}><AdminList data={this.state.radios}
+                                                                      clickDelete={this.clickDelete}
+                                                                      clickUpdate = {this.clickUpdate}/></div>
                 <div className ="radio-column"><RadioList data={this.state.radios} /></div>
             </div>
         )

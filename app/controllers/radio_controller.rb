@@ -6,6 +6,14 @@ class RadioController < ApplicationController
     @radio = Radio.all
   end
 
+  def update
+    radio = Radio.find(params[:id])
+    radio.update_attributes(radio_params)
+    respond_to do |format|
+      format.json {render json: radio, status: :ok}
+    end
+  end
+
   def create
      radio = Radio.new(radio_params)
      if radio.valid?
