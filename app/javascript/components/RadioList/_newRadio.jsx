@@ -13,9 +13,9 @@ class NewRadio extends React.Component{
             url: '/radio/',
             type: 'POST',
             data: { radio: { r_name: name, r_url: url } },
-            success: (radioNew) => {
-                console.log(radioNew);
-                this.props.handleSubmit(radioNew);
+            success: (radio) => {
+                this.props.handleSubmit(radio);
+                $('.input').val('');
             }
         });
     }
@@ -23,8 +23,8 @@ class NewRadio extends React.Component{
         return (
             <div className="list-group">
                 Add radio.
-                <input ref='name' placeholder='Enter the name of the radio' />
-                <input ref='url' placeholder='Enter a url' />
+                <input ref='name' className="input" placeholder='Enter the name of the radio' />
+                <input ref='url' className="input" placeholder='Enter a url' />
                 <button onClick={this.handleClick} style={{width: '100%'}}>Submit</button>
             </div>
 
