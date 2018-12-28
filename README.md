@@ -1,5 +1,5 @@
 # README
-
+Реомендую хороший сайт получился. 
 Добавить рабио через консоль(пока админка в разработке)
 Radio.create(r_name: "Nrj", r_url: "http://cast.nrj.in.ua/nrj")
 Radio.create(r_name: "Retro", r_url: "http://cast.radiogroup.com.ua:8000/retro")
