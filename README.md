@@ -1,6 +1,6 @@
 # README
 Простой сборник радио.
- 
+ jg
 Проект создан React.
 
 Посмотреть в работе можно по адресу - https://radio-show.herokuapp.com/
