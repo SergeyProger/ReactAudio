@@ -2,16 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.new-radio{
+  display: none;
+  max-width: 100%;
+}
 .admin-column{
   display: none;
   float: left;
-  max-width: 30%;
+  max-width: 40%;
 }
-
+.admin-column, button{
+  width: 50%;
+  cursor: pointer;
+}
+.admin-column, input {
+  width: 100%;
+}
 .radio-column{
   margin: auto;
   max-width: 100%;
   text-align: center;
+}
+.ml-auto, .mx-auto {
+  margin-left: auto !important;
+  height: 200px;
 }
 .header h1{
   text-align: center;
@@ -35,9 +50,8 @@
     font-family: 'Josefin Sans', sans-serif;
 
 }
-
 .icon-play {
-  max-width: 10em;
+  max-width: 7em;
   padding-left : 32px;
   padding-top : 10px;
   padding-bottom : 10px;
@@ -45,7 +59,7 @@
 }
 .icon-pause {
   display: none;
-  max-width: 10em;
+  max-width: 7em;
   padding-left : 32px;
   padding-top : 10px;
   padding-bottom : 10px;
@@ -58,5 +72,7 @@
   left: 87%;
   top: 5px;
   cursor: pointer;
+}
+.plaer {
 
 }
