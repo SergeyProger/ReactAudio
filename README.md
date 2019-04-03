@@ -1,7 +1,7 @@
 # README
 
 Простой сборник радио.
-k
+
 Проект создан React.
 
 Посмотреть в работе можно по адресу - https://radio-show.herokuapp.com/
