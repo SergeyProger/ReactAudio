@@ -26,6 +26,7 @@ class Radio extends React.Component {
                 </div>
                 <div className="card-body">
                     <audio id={this.rid} key={this.rid} className="plaer">
+                        <source src={this.rurl} type="audio/mp3"/>
                         <source src={this.rurl} type="audio/ogg"/>
                         <source src={this.rurl} type="audio/mpeg"/>
                         <source src={this.rurl} type="audio/waw"/>
