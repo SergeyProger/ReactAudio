@@ -59,8 +59,13 @@ export default class RadioList extends React.Component {
         all[i].load();
         all[i].oncanplay = function() {
           setTimeout(function () {
-            all[i].play();
-            loader.style.display='none';
+            let playPromise = all[i].play();
+            playPromise.then(_ => {
+              loader.style.display='none';
+            })
+            .catch(error => {
+              console.log('Error' + error);
+            });
           }, 0);
         }
       } else {

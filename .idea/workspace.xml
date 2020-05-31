@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7062f78e-d262-4d4b-9a32-d250d97ec178" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/welcom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/welcom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/radio_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/radio_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/components/Radio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Radio.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/components/RadioList/_newRadio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/RadioList/_newRadio.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/components/RadioList/adminList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/RadioList/adminList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -103,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+            <state relative-caret-position="660">
+              <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -127,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcom.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="welcom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcom.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="800">
-              <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -211,8 +201,8 @@
         <option value="$PROJECT_DIR$/app/javascript/components/AdminRadio.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/components/Radio.jsx" />
-        <option value="$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/welcom.scss" />
+        <option value="$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx" />
       </list>
     </option>
   </component>
@@ -493,12 +483,12 @@
       <workItem from="1539177130121" duration="429000" />
       <workItem from="1590471273924" duration="18598000" />
       <workItem from="1590746636888" duration="1543000" />
-      <workItem from="1590930450274" duration="13731000" />
+      <workItem from="1590930450274" duration="15486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247801000" />
+    <option name="totallyTimeSpent" value="249556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -714,16 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/components/RadioList/_newRadio.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -750,7 +730,17 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
-          <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/components/RadioList/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
