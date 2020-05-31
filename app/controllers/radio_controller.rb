@@ -36,6 +36,7 @@ class RadioController < ApplicationController
   end
 
   private
+
   def radio_params
     params.require(:radio).permit(:id, :r_name, :r_url)
   end

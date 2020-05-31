@@ -13,8 +13,8 @@
   max-width: 40%;
 }
 .admin-column, button{
-  width: 50%;
   cursor: pointer;
+  width: 50%;
 }
 .admin-column, input {
   width: 100%;
@@ -25,54 +25,71 @@
   text-align: center;
 }
 .ml-auto, .mx-auto {
-  margin-left: auto !important;
   height: 200px;
+  margin-left: auto !important;
 }
 .header h1{
-  text-align: center;
-  margin: 1em 0 0.5em 0;
-  font-weight: 100;
-  text-transform: uppercase;
   color: #00caa6;
-  font-style: italic;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 58px;
+  font-style: italic;
+  font-weight: 100;
   line-height: 54px;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
   text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+  text-transform: uppercase;
 }
 .header h2{
-    text-align: center;
-    margin: 1em 0 0.5em 0;
     color: #148773;
-    font-size: 26px;
-    line-height: 40px;
-    font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
 
 }
 .icon-play {
+  cursor: pointer;
   max-width: 7em;
+  padding-bottom : 10px;
   padding-left : 32px;
   padding-top : 10px;
-  padding-bottom : 10px;
-  cursor: pointer;
 }
 .icon-pause {
+  cursor: pointer;
   display: none;
   max-width: 7em;
+  padding-bottom : 10px;
   padding-left : 32px;
   padding-top : 10px;
-  padding-bottom : 10px;
-  cursor: pointer;
 }
 .icon-admin {
-  position: relative;
+  cursor: pointer;
+  left: 87%;
   max-width: 5em;
   min-height: 2em;
-  left: 87%;
+  position: relative;
   top: 5px;
-  cursor: pointer;
 }
-.plaer {
 
+.loader {
+  animation: spin 2s linear infinite;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-radius: 50%;
+  border-top: 16px solid #3498db; /* Blue */
+  display: none;
+  height: 75px;
+  vertical-align: middle;
+  width: 75px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+li {
+  height: 250px;
 }

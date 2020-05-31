@@ -10,11 +10,14 @@ import NewRadio from '../components/RadioList/_newRadio'
 class Hello extends React.Component {
 
   constructor(props) {
+
       super(props);
+
       this.state = {
           admin: false,
           radios: []
       };
+
       this.componentDidMount();
   }
 
@@ -38,7 +41,6 @@ class Hello extends React.Component {
     updateRadio(radio) {
         let radiox = this.state.radios.filter((i) => { return i.id != radio.id });
          radiox.push(radio);
-
         this.setState({radios: radiox });
     }
 
@@ -50,12 +52,12 @@ class Hello extends React.Component {
                 this.removeRadioClient(id);
             }
         });
-    }
+    };
 
     handleSubmit = (radio) => {
         let newState = this.state.radios.concat(radio);
         this.setState({ radios: newState });
-    }
+    };
 
     clickUpdate = (radio) =>{
         console.log('tic' + radio.r_url );
@@ -69,7 +71,7 @@ class Hello extends React.Component {
                 }
             }
         )
-    }
+    };
 
     render() {
 
@@ -100,12 +102,13 @@ class Hello extends React.Component {
         this.setState({admin: !this.state.admin});
     }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
         <Hello/>,
         document.body.appendChild(document.createElement('root')),
     )
-})
+});
 
 export default Hello;
 
